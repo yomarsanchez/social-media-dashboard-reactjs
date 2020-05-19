@@ -1,0 +1,41 @@
+.card-view {
+  background: var(--cardBg);
+  border-radius: 0.5em;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1.2em;
+}
+.card-view p {
+  margin: 0;
+  font-weight: 700;
+  line-height: 0.9;
+}
+.card-view__description {
+  color: var(--textSecondary);
+}
+.card-view__icon {
+  text-align: right;
+}
+.card-view__total {
+  font-size: 2.5em;
+}
+.card-view__percentage {
+  color: var(--limeGreen);
+  font-size: 0.9em;
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.card-view__percentage span {
+  display: flex;
+  align-items: center;
+}
+.card-view__percentage img {
+  margin-right: 0.3em;
+}
+
+.card-view__percentage.is-danger {
+  color: var(--brightRed);
+}

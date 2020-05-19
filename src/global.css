@@ -1,0 +1,137 @@
+:root {
+  /* Primary colors */
+  --limeGreen: hsl(163, 72%, 41%);
+  --brightRed: hsl(356, 69%, 56%);
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(195, 100%, 50%);
+  --instagram: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%) 0%,
+    hsl(329, 70%, 58%) 100%
+  );
+  --youtube: hsl(348, 97%, 39%);
+
+  /* Switch - Light theme */
+  --bgToggle: hsl(230, 22%, 74%);
+
+  /* Neutral colors - Light theme */
+  --bgColor: hsl(0, 0%, 100%);
+  --topPatternBg: hsl(225, 100%, 98%);
+  --cardBg: hsl(227, 47%, 96%);
+  --textPrimary: hsl(230, 17%, 14%);
+  --textSecondary: hsl(228, 12%, 44%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--textPrimary);
+  background-color: var(--bgColor);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: var(--bgColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.wrapper {
+  padding: 0 30px;
+}
+
+.grid {
+  display: grid;
+  grid-row-gap: 25px;
+}
+
+.is-light-mode {
+  /* Switch - Light theme */
+  --bgToggle: hsl(230, 22%, 74%);
+
+  /* Neutral colors - Light theme */
+  --bgColor: hsl(0, 0%, 100%);
+  --topPatternBg: hsl(225, 100%, 98%);
+  --cardBg: hsl(227, 47%, 96%);
+  --textPrimary: hsl(230, 17%, 14%);
+  --textSecondary: hsl(228, 12%, 44%);
+}
+
+.is-dark-mode {
+  /* Switch - Dark theme */
+  --bgToggle: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%) 0%,
+    hsl(146, 68%, 55%) 100%
+  );
+
+  /* Neutral colors - Dark theme */
+  --bgColor: hsl(230, 17%, 14%);
+  --topPatternBg: hsl(232, 19%, 15%);
+  --cardBg: hsl(228, 28%, 20%);
+  --textPrimary: hsl(0, 0%, 100%);
+  --textSecondary: hsl(228, 34%, 66%);
+}
+
+/* Media queries */
+@media screen and (min-width: 560px) {
+  .wrapper {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* Header */
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+  }
+  .header-description {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Switch - Dark theme */
+    --bgToggle: linear-gradient(
+      to right,
+      hsl(210, 78%, 56%) 0%,
+      hsl(146, 68%, 55%) 100%
+    );
+
+    /* Neutral colors - Dark theme */
+    --bgColor: hsl(230, 17%, 14%);
+    --topPatternBg: hsl(232, 19%, 15%);
+    --cardBg: hsl(228, 28%, 20%);
+    --textPrimary: hsl(0, 0%, 100%);
+    --textSecondary: hsl(228, 34%, 66%);
+  }
+}

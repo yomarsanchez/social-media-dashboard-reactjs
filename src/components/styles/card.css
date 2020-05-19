@@ -1,0 +1,68 @@
+.card {
+  background: var(--cardBg);
+  border-radius: 0.5em;
+  overflow: hidden;
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+}
+.card::before {
+  content: '';
+  display: block;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.card.facebook::before {
+  background: var(--facebook);
+}
+.card.twitter::before {
+  background: var(--twitter);
+}
+.card.instagram::before {
+  background-image: var(--instagram);
+}
+.card.youtube::before {
+  background: var(--youtube);
+}
+.card-title {
+  color: var(--textSecondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.card-title img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.3em;
+}
+
+.card-social__total {
+  font-size: 50px;
+  font-weight: 700;
+}
+.card-social__description {
+  display: block;
+  color: var(--textSecondary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.card-today {
+  margin-top: 20px;
+  color: var(--limeGreen);
+  font-size: 1em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-today img {
+  margin-right: 0.3em;
+}
+.card-today.is-danger {
+  color: var(--brightRed);
+}

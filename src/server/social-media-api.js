@@ -1,0 +1,38 @@
+export default [
+  {
+    id: 1,
+    username: '@yomarsanchez',
+    socialNetwork: 'facebook',
+    icon: { url: 'images/icon-facebook.svg', name: 'Facebook' },
+    total: '1987',
+    description: 'Followers',
+    totalToday: 12,
+  },
+  {
+    id: 2,
+    username: '@yomarsanchex',
+    socialNetwork: 'twitter',
+    icon: { url: 'images/icon-twitter.svg', name: 'Twitter' },
+    total: '1044',
+    description: 'Followers',
+    totalToday: 99,
+  },
+  {
+    id: 3,
+    username: '@yomarsanchezalania',
+    socialNetwork: 'instagram',
+    icon: { url: 'images/icon-instagram.svg', name: 'Instagram' },
+    total: '11k',
+    description: 'Followers',
+    totalToday: 1099,
+  },
+  {
+    id: 4,
+    username: 'Yomar Sánchez',
+    socialNetwork: 'youtube',
+    icon: { url: 'images/icon-youtube.svg', name: 'Youtube' },
+    total: '8239',
+    description: 'Subscribers',
+    totalToday: 144,
+  },
+]

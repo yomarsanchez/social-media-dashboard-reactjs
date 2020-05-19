@@ -1,0 +1,58 @@
+export default [
+  {
+    id: 1,
+    description: 'Page Views',
+    icon: { url: 'images/icon-facebook.svg', name: 'Facebook' },
+    total: '87',
+    percentage: 3,
+  },
+  {
+    id: 2,
+    description: 'Likes',
+    icon: { url: 'images/icon-facebook.svg', name: 'Facebook' },
+    total: '52',
+    percentage: 2,
+  },
+  {
+    id: 3,
+    description: 'Likes',
+    icon: { url: 'images/icon-instagram.svg', name: 'Instagram' },
+    total: '5462',
+    percentage: 2257,
+  },
+  {
+    id: 4,
+    description: 'Profile Views',
+    icon: { url: 'images/icon-instagram.svg', name: 'Instagram' },
+    total: '52k',
+    percentage: 1375,
+  },
+  {
+    id: 5,
+    description: 'Retweets',
+    icon: { url: 'images/icon-twitter.svg', name: 'Twitter' },
+    total: '117',
+    percentage: 303,
+  },
+  {
+    id: 6,
+    description: 'Likes',
+    icon: { url: 'images/icon-twitter.svg', name: 'Twitter' },
+    total: '507',
+    percentage: 553,
+  },
+  {
+    id: 7,
+    description: 'Likes',
+    icon: { url: 'images/icon-youtube.svg', name: 'Youtube' },
+    total: '107',
+    percentage: 19,
+  },
+  {
+    id: 8,
+    description: 'Total Views',
+    icon: { url: 'images/icon-youtube.svg', name: 'Youtube' },
+    total: '1407',
+    percentage: 12,
+  },
+]

@@ -1,0 +1,38 @@
+.dark-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dark-mode__title {
+  color: var(--textSecondary);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.dark-mode__checkbox {
+  display: none;
+}
+.dark-mode__checkbox:checked ~ .dark-mode__switch::before {
+  transform: translateX(25px);
+}
+.dark-mode__switch {
+  background: var(--bgToggle);
+  height: 25px;
+  width: 50px;
+  display: block;
+  border-radius: 25px;
+  padding: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
+}
+.dark-mode__switch::before {
+  content: '';
+  display: block;
+  background: var(--bgColor);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  transform: translateX(0);
+  transition: 0.3s;
+  will-change: transform;
+}
