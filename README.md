@@ -18,19 +18,19 @@ Demo https://yomarsanchez.github.io/social-media-dashboard
 
 #### Vista desktop
 
-<div style="text-align: center;">
+<p align="center">
   <a href="./public/images/desktop-design-dark.png" target="_black">
     <img src="./public/images/desktop-design-dark.png" width="1024">
   </a>
-</div>
+</p>
 
 #### Vista mobile
 
-<div style="text-align: center;">
+<p align="center">
   <a href="./public/images/mobile-design-light.png" target="_black">
-    <img src="./public/images/mobile-design-light.png" width="375">
+    <img src="./public/images/mobile-design-light.png" border="1" width="375">
   </a>
-</div>
+</p>
 
 ## Available Scripts
 
