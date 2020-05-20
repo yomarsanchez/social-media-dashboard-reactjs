@@ -28,10 +28,14 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--textPrimary);
-  background-color: var(--bgColor);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: var(--bgColor);
+}
+
+main {
+  color: var(--textPrimary);
+  background-color: var(--bgColor);
+  min-height: 100vh;
 }
 
 h1,
@@ -47,6 +51,8 @@ h6 {
 }
 
 .wrapper {
+  max-width: 1440px;
+  margin: auto;
   padding: 0 30px;
 }
 
@@ -85,11 +91,6 @@ h6 {
 
 /* Media queries */
 @media screen and (min-width: 560px) {
-  .wrapper {
-    max-width: 1440px;
-    margin: auto;
-  }
-
   .grid {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 25px;
@@ -107,8 +108,8 @@ h6 {
     grid-template-columns: 1fr 150px;
   }
   .header-description {
-    border-bottom: none;
-    padding-bottom: 0;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
   }
 }
 

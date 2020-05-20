@@ -13,6 +13,8 @@
 }
 .card-view__description {
   color: var(--textSecondary);
+  display: flex;
+  align-items: center;
 }
 .card-view__icon {
   text-align: right;
